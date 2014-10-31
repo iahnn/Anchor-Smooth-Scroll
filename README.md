@@ -9,6 +9,9 @@ This will transform traditional scroll into smooth scrolling effect in a page us
 <p>Smooth scroll will activate whenever you added a data-target attribute into your links. Smooth scroll will not work if the defined target element is empty.</p>
 
 <h5>Example</h5>
-<a href="#" data-target="#example-1">Example 1</a>
-<div id="example-1">...</div>
+<pre>
+&lt;a href="#" data-target="#example-1"&gt;Example 1&lt;/a&gt;<br>
+&lt;!-- Content --&gt;<br>
+&lt;div id="example-1"&gt;...&lt;/div&gt;<br>
+</pre>
 
