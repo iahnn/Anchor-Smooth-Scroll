@@ -25,8 +25,8 @@ There are only two steps to make smooth scroll works
 
 <h5>Example</h5>
 <pre>
-&lt;a href="#" data-target="#example-1"&gt;Example 1&lt;/a&gt;<br>
-&lt;!-- Content --&gt;<br>
-&lt;div id="example-1"&gt;...&lt;/div&gt;<br>
+&lt;a href="#" data-target="#example-1"&gt;Example 1&lt;/a&gt;
+&lt;!-- Content --&gt;
+&lt;div id="example-1"&gt;...&lt;/div&gt;
 </pre>
 
