@@ -24,9 +24,9 @@ There are only two steps to make smooth scroll works
 The example below will make all <a> tags as target and any <a> tags that contains data-target attribute will have the smooth scroll effect to its target.
 <pre>
 &lt;script&gt;
-jQuery(document).ready(function($) {
-  $('a').smoothScroll();
-});
+  jQuery(document).ready(function($) {
+    $('a').smoothScroll();
+  });
 &lt;/script&gt;
 </pre>
 
