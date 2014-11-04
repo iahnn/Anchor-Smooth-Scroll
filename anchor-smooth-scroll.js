@@ -4,7 +4,7 @@
  * Transform traditional anchor scroll into a smooth scroll effect
  *
  * @author Bryan Lusica
- * @http://yourwebtech.info
+ * https://github.com/iahnn/Anchor-Smooth-Scroll
  **/
 
 ;(function($) {
