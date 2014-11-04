@@ -1,4 +1,4 @@
-<script>
+
 	/**
 	 * Anchor Smooth Scroll
 	 * Requires jQuery 1.8 or higher
@@ -9,18 +9,26 @@
 	 **/
 	 
 	;(function($) {
-		var $body = $('html, body');
+				$.fn.smoothScroll = function(options) {
+					var opt = $.extend({
+						ease: "slow",
+						target: "target"
+					}, options);
 
-		$('a').on('click', function(e) {
-			var $this = $(this),
-				dataId = $this.data('target'),
-				$target = $(dataId),
-				$sectionPos = $target.offset();					
+					var $body = $('html, body'),
+						$this = $(this);
 
-			if(typeof dataId !== "undefined" && $target.length > 0) {
-				$body.animate({scrollTop: $sectionPos.top}, 'slow');
-				e.preventDefault();
-			}
-		});
-	})(jQuery);
-</script>
+					$this.on('click', function(e) {
+						var dataId = $(this).data(opt.target),
+							$target = $(dataId),
+							$sectionPos = $target.offset();
+
+						if(typeof dataId !== "undefined" && $target.length > 0) {
+							$body.animate({scrollTop: $sectionPos.top}, opt.ease);
+							e.preventDefault();
+						}
+					});
+
+					return $this;
+				};
+			})(jQuery);
