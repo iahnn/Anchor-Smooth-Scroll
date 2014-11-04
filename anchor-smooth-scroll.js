@@ -26,6 +26,8 @@
                 $body.animate({scrollTop: $sectionPos.top}, opt.ease);
                 e.preventDefault();
             }
+            
+            return $(this);
         });
 
         return $this;
