@@ -20,6 +20,16 @@ There are only two steps to make smooth scroll works
 &lt;script src="js/anchor-smooth-scroll.js"&gt;&lt;/script&gt;
 </pre>
 
+<h4>Define the target elements</h4>
+The example below will make all <a> tags as target and any <a> tags that contains data-target attribute will have the smooth scroll effect to its target.
+<pre>
+<script>
+jQuery(document).ready(function($) {
+  $('a').smoothScroll();
+});
+</script>
+</pre>
+
 <h3>2. Adding target to achor links</h3>
 <p>Smooth scroll will activate whenever you added a data-target attribute into your links. Smooth scroll will not work if the defined target element is empty.</p>
 
