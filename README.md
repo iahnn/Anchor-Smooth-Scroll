@@ -21,7 +21,7 @@ There are only two steps to make smooth scroll works
 </pre>
 
 <h4>Define the target elements</h4>
-The example below will make all <a> tags as target and any <a> tags that contains data-target attribute will have the smooth scroll effect to its target.
+The example below will make all &lt;a&gt; tags as target and any &lt;a&gt; tags that contains data-target attribute will have the smooth scroll effect to its target.
 <pre>
 &lt;script&gt;
   jQuery(document).ready(function($) {
