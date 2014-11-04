@@ -23,11 +23,11 @@ There are only two steps to make smooth scroll works
 <h4>Define the target elements</h4>
 The example below will make all <a> tags as target and any <a> tags that contains data-target attribute will have the smooth scroll effect to its target.
 <pre>
-<script>
+&lt;script&gt;
 jQuery(document).ready(function($) {
   $('a').smoothScroll();
 });
-</script>
+&lt;/script&gt;
 </pre>
 
 <h3>2. Adding target to achor links</h3>
