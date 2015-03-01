@@ -23,7 +23,7 @@
                 $sectionPos = $target.offset();
 
             if(typeof dataId !== "undefined" && $target.length > 0) {
-                $body.animate({scrollTop: $sectionPos.top}, opt.speed, opt.ease);
+                $body.stop().animate({scrollTop: $sectionPos.top}, opt.speed, opt.ease);
                 e.preventDefault();
             }
 
