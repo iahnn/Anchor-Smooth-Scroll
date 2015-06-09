@@ -20,7 +20,7 @@
         $this.on('click', function(e) {
             var dataId = $(this).data("target"),
                 $target = $(dataId),
-                $sectionPos = $target.offset();
+                $sectionPos = $target.position();
 
             if(typeof dataId !== "undefined" && $target.length > 0) {
                 $body.stop().animate({scrollTop: $sectionPos.top}, opt.speed, opt.ease);
